@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <!-- Trang mở đầu -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <!-- Login -->
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <!-- Register -->
+    <servlet>
+        <servlet-name>RegisterController</servlet-name>
+        <servlet-class>controllers.RegisterController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterController</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <!-- Share -->
+    <servlet>
+        <servlet-name>ShareController</servlet-name>
+        <servlet-class>controllers.ShareController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShareController</servlet-name>
+        <url-pattern>/share</url-pattern>
+    </servlet-mapping>
+    <!-- Logout -->
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>controllers.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <!-- Survey List -->
+    <servlet>
+        <servlet-name>SurveyListController</servlet-name>
+        <servlet-class>controllers.SurveyListController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SurveyListController</servlet-name>
+        <url-pattern>/survey-list</url-pattern>
+    </servlet-mapping>
+    <!-- Create Survey -->
+    <servlet>
+        <servlet-name>CreateSurveyController</servlet-name>
+        <servlet-class>controllers.CreateSurveyController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateSurveyController</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    <!-- Do Survey -->
+    <servlet>
+        <servlet-name>DoSurveyController</servlet-name>
+        <servlet-class>controllers.DoSurveyController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DoSurveyController</servlet-name>
+        <url-pattern>/do-survey</url-pattern>
+    </servlet-mapping>
+    <!-- Delete Survey -->
+    <servlet>
+        <servlet-name>DeleteSurveyController</servlet-name>
+        <servlet-class>controllers.DeleteSurveyController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteSurveyController</servlet-name>
+        <url-pattern>/survey-delete</url-pattern>
+    </servlet-mapping>
+    <!-- Submit Survey -->
+    <servlet>
+        <servlet-name>SubmitSurveyController</servlet-name>
+        <servlet-class>controllers.SubmitSurveyController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitSurveyController</servlet-name>
+        <url-pattern>/submit</url-pattern>
+    </servlet-mapping>
+    <!-- View Result -->
+    <servlet>
+        <servlet-name>ViewResultController</servlet-name>
+        <servlet-class>controllers.ViewResultController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewResultController</servlet-name>
+        <url-pattern>/view</url-pattern>
+    </servlet-mapping>
+    <!-- Admin Surveys -->
+    <servlet>
+        <servlet-name>AdminSurveysController</servlet-name>
+        <servlet-class>controllers.AdminSurveysController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminSurveysController</servlet-name>
+        <url-pattern>/admin-surveys</url-pattern>
+    </servlet-mapping>
+    <!-- Survey Lock -->
+    <servlet>
+        <servlet-name>SurveyLockController</servlet-name>
+        <servlet-class>controllers.SurveyLockController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SurveyLockController</servlet-name>
+        <url-pattern>/survey-lock</url-pattern>
+    </servlet-mapping>
+    <!-- Admin Users -->
+    <servlet>
+        <servlet-name>AdminUsersController</servlet-name>
+        <servlet-class>controllers.AdminUsersController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUsersController</servlet-name>
+        <url-pattern>/admin-users</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserEditController</servlet-name>
+        <servlet-class>controllers.AdminUserEditController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserEditController</servlet-name>
+        <url-pattern>/admin-user-edit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserCreateController</servlet-name>
+        <servlet-class>controllers.AdminUserCreateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserCreateController</servlet-name>
+        <url-pattern>/admin-user-create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserUpdateController</servlet-name>
+        <servlet-class>controllers.AdminUserUpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserUpdateController</servlet-name>
+        <url-pattern>/admin-user-update</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserDeleteController</servlet-name>
+        <servlet-class>controllers.AdminUserDeleteController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserDeleteController</servlet-name>
+        <url-pattern>/admin-user-delete</url-pattern>
+    </servlet-mapping></web-app>
